@@ -1,0 +1,30 @@
+from Bio.Seq import Seq
+
+s1="""ATGACGACATCGTCCTACTTTCTGTTGGTGGCCCTAGGCCTTCTGCTGTACGTGTACGTGTGTCAATCTG
+GCCAGGACTATTCCTGCCAGCTTGATGACCCTGCTGATCCACGGGGCAAATGTGGATCAGACTTGCCTGA
+CTATCTCGAAAAAAAATGTGAAGAAGAGAAAGCTAGGCAAGGCGTTTCAGGAACAAATGACCCAGGGAAG
+AAGAGAGGACGGGCTTCCCCACTGTTGAAGCGACGGCGCTTTCTCTCCATGATGAAGGCACGGGCCAAGA
+GGAATGAACCATTTAAGCGGAGAGGTTACAAGGGAATTGCCTGTGAATGTTGTCAACATTACTGCACTGA
+TCCAGAATTTACCAAGTATTGTCCCCCACTCCCTAAATCGTCCAGT"""
+
+nseq=s1.replace("\n","")
+
+print(nseq)
+
+rseq=Seq(nseq)
+
+print(rseq.translate())
+
+print("1st frame:",rseq.translate())
+
+print("2nd frame :",rseq[1:].translate())
+
+print("3rd frame :",rseq[2:].translate())
+
+rev=rseq.reverse_complement()
+
+print("4th frame: ",rev.translate())
+print("5th frame: ",rev[1:].translate())
+print("6th frame: ",rev[2:].translate())
+
+

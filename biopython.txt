@@ -1,0 +1,112 @@
+biopython is set of freely avaliable tools which will be used for biological computation.
+in biopython we can deal with dna and rna seq.
+it is completly written in python.
+
+how to install biopython:-
+----------------------
+pip3 install biopython
+
+rima@rima-zinjuwadia:~/Desktop/biopython$ python3
+Python 3.8.5 (default, Jan 27 2021, 15:41:15) 
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import Bio
+>>> dir(Bio)
+['BiopythonDeprecationWarning', 'BiopythonExperimentalWarning', 'BiopythonParserWarning', 'BiopythonWarning', 'MissingExternalDependencyError', 'MissingPythonDependencyError', 'StreamModeError', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_parent_dir', 'os', 'warnings']
+>>> print(Bio.__version__)
+1.79
+>>> print(Bio.__doc__)
+Collection of modules for dealing with biological data in Python.
+
+The Biopython Project is an international association of developers
+of freely available Python tools for computational molecular biology.
+
+https://biopython.org
+
+>>> exit()
+rima@rima-zinjuwadia:~/Desktop/biopython$ 
+
+function in python:-
+------------------------------
+function is block of code which takes the input do some specific operation and produces the output
+if we create the function then we will not required to write same code again and again instead of writeing same code we have to call the function.
+
+two types of function:-
+-------------------
+1)inbuilt function :- the function already present in python len() ,count(),replace()
+
+2)user defined function :- user can create our own function .
+
+
+def function_name():       #function defination 
+	block of code      #function body
+
+function_name()            #function calling
+
+
+function is block of code which only run when we call the function .
+function calling is done by function name
+
+we can also pass the parameter inside function:-
+
+def function_name(parameter1,parameter2....):
+	block of code 
+
+function_name()
+
+
+def functttion_name(paraemters..):
+	return  operation
+
+function_name()
+
+class:- 
+--------------
+class is group of attributes and methods
+
+what is attributes:-
+-------------------
+it is represented by variable 
+a=90
+
+what us methods?
+------------------
+it performs action or task.it is similar to function.  .count() .replace()  len() 
+
+
+object:- 
+-------------
+it is collection of data and methdso which act on those data
+
+
+class --> sketch of house  
+it contains info about doors floorr etc..
+using this info we can build the house that house is called object.
+
+
+class class_name:
+	attributes
+	methods
+	
+object_name=class_name()     #this is way to create the object
+
+in class and object  there will be some reserved methods and reserved keywords are present:-
+
+1)__init__():- this methods is used to initialise the attributes from class
+this method is auctomatically getting called when we create the object of class
+
+2)self :- to access the data from attributes.
+
+modules:-
+---------------
+module is python file which contains python defination and statements.
+
+import keyword is used to import ay module
+
+import module_name
+
+
+
+
+
+
